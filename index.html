@@ -1,90 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Website</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        #video-bg {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -1;
-        }
-
-        .content {
-            position: relative;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.6);
-            color: white;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            padding: 12px 30px;
-            background: #2ecc71;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            font-weight: bold;
-        }
-
-        .btn:hover {
-            background: #27ae60;
-            transform: translateY(-2px);
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            
-            p {
-                font-size: 1rem;
-            }
-            
-            .btn {
-                padding: 10px 25px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denu Manawaduge - Personal & PC Details</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <video autoplay muted loop id="video-bg">
-        <source src="https://files.catbox.moe/ro4i4p.mp4" type="video/mp4">
+  <div class="video-background">
+    <video autoplay muted loop id="bg-video">
+      <source src="background.mp4" type="video/mp4">
+      Your browser does not support the video tag.
     </video>
-    
-    <div class="content">
-        <h1>Welcome to My Website</h1>
-        <p>This is a responsive website with a video background created using GitHub Pages. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#" class="btn">View Projects</a>
-        <a href="#" class="btn" style="margin-top: 15px;">Contact Me</a>
+  </div>
+  <div class="container">
+    <div class="card">
+      <h1 class="animated-text">Denu Manawaduge</h1>
+      <p class="animated-text">Age: 17+</p>
+      <p class="animated-text">From: Badulla</p>
+      <h2 class="animated-text">PC Details</h2>
+      <ul class="animated-text">
+        <li><strong>GPU:</strong> NVIDIA GeForce GTX 1650 SUPER 4GB</li>
+        <li><strong>CPU:</strong> 11th Gen Intel(R) Core(TM) i5-11400H</li>
+        <li><strong>RAM:</strong> 8GB x 2 DDR4 3200 MHz</li>
+        <li><strong>SSD:</strong> MSI SPATIUM M450 1TB PCIE 4.0 NVME M.2</li>
+        <li><strong>HDD:</strong> 500GB Hard</li>
+      </ul>
+      <div class="social-links animated-text">
+        <a href="https://web.facebook.com/profile.php?id=61566515494558" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/+94706176162?text=Hey_denu" target="_blank" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://discord.com/invite/w32MBJ32" target="_blank" class="social-btn"><i class="fab fa-discord"></i></a>
+      </div>
     </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
