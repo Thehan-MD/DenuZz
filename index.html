@@ -3,38 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Denu Manawaduge - Personal & PC Details</title>
+  <title>My Website</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="video-background">
-    <video autoplay muted loop id="bg-video">
-      <source src="https://files.catbox.moe/ro4i4p.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
+  <!-- Background Video -->
+  <video autoplay muted loop id="background-video">
+    <source src="https://files.catbox.moe/ro4i4p.mp4" type="video/mp4">
+  </video>
+
+  <!-- Main Buttons -->
   <div class="container">
-    <div class="card">
-      <h1 class="animated-text">Denu Manawaduge</h1>
-      <p class="animated-text">Age: 17+</p>
-      <p class="animated-text">From: Badulla</p>
-      <h2 class="animated-text">PC Details</h2>
-      <ul class="animated-text">
-        <li><strong>GPU:</strong> NVIDIA GeForce GTX 1650 SUPER 4GB</li>
-        <li><strong>CPU:</strong> 11th Gen Intel(R) Core(TM) i5-11400H</li>
-        <li><strong>RAM:</strong> 8GB x 2 DDR4 3200 MHz</li>
-        <li><strong>SSD:</strong> MSI SPATIUM M450 1TB PCIE 4.0 NVME M.2</li>
-        <li><strong>HDD:</strong> 500GB Hard</li>
-      </ul>
-      <div class="social-links animated-text">
-        <a href="https://web.facebook.com/profile.php?id=61566515494558" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://wa.me/+94706176162?text=Hey_denu" target="_blank" class="social-btn"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://discord.com/invite/w32MBJ32" target="_blank" class="social-btn"><i class="fab fa-discord"></i></a>
-      </div>
-    </div>
+    <button id="details-btn" class="main-btn">DETAILS</button>
+    <button id="contact-btn" class="main-btn">CONTACT ME</button>
   </div>
+
+  <!-- Details Buttons -->
+  <div id="details-menu" class="hidden">
+    <button id="personal-details-btn" class="sub-btn">PERSONAL DETAILS</button>
+    <button id="pc-specs-btn" class="sub-btn">PC SPECS</button>
+  </div>
+
+  <!-- Contact Buttons -->
+  <div id="contact-menu" class="hidden">
+    <a href="https://web.facebook.com/profile.php?id=61566515494558" target="_blank">
+      <img src="https://files.catbox.moe/9utorv.jpg" alt="Facebook" class="icon">
+    </a>
+    <a href="https://discord.com/invite/w32MBJ32" target="_blank">
+      <img src="https://files.catbox.moe/dfz5l1.jpg" alt="Discord" class="icon">
+    </a>
+    <a href="https://wa.me/+94706176162?text=Hey_denu" target="_blank">
+      <img src="https://files.catbox.moe/k2m08u.jpg" alt="WhatsApp" class="icon">
+    </a>
+  </div>
+
+  <!-- Personal Details Image -->
+  <div id="personal-details-img" class="hidden">
+    <img src="https://files.catbox.moe/q2gino.jpg" alt="Personal Details">
+  </div>
+
+  <!-- PC Specs Image -->
+  <div id="pc-specs-img" class="hidden">
+    <img src="https://files.catbox.moe/ot7t7w.jpg" alt="PC Specs">
+  </div>
+
   <script src="script.js"></script>
 </body>
-  </html>
+</html>
