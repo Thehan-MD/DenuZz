@@ -1,20 +1,102 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>DenuZzz</title>
-       <link rel="stylesheet" href="styles.css">
-   </head>
-   <body>
-       <div class="startup-animation">
-           <video autoplay muted loop id="bg-video">
-               <source src="https://files.catbox.moe/ro4i4p.mp4" type="video/mp4">
-               Your browser does not support the video tag.
-           </video>
-           <h1 id="typing-text"></h1>
-       </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DenuZzz | Cybernetic Dreamscape</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="cyber-loader"></div>
+    </div>
 
-       <script src="scripts.js"></script>
-   </body>
-                 </html>
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop class="bg-video">
+            <source src="https://files.catbox.moe/ro4i4p.mp4" type="video/mp4">
+        </video>
+        <div class="matrix-overlay"></div>
+        <div class="cyber-text">
+            <h1 class="glitch" data-text="DENUZZZ">DENUZZZ</h1>
+            <div class="scanner-beam"></div>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <main class="container">
+        <!-- Strange Image Section -->
+        <section class="reveal-section">
+            <div class="hologram-frame">
+                <img src="YOUR_IMAGE_URL_HERE" alt="Mystery Image" class="hologram-img">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="cyber-card">
+                <div class="content">
+                    <h2 class="neon-heading">// ABOUT_ME</h2>
+                    <div class="bio-grid">
+                        <img src="PROFILE_IMAGE_URL" alt="Your Avatar" class="cyber-avatar">
+                        <p class="neon-text">[Insert your bio here...]<br>
+                        <span class="blink">>> SPECIALTIES: WEB_DEV, DESIGN, CYBER_SECURITY</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio-section">
+            <h2 class="neon-heading">// PORTFOLIO</h2>
+            <div class="grid-system">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Project Alpha</h3>
+                        <p>AI-Powered Cyber Interface</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="cyber-form">
+                <h2 class="neon-heading">// SEND_MESSAGE</h2>
+                <form>
+                    <div class="input-group">
+                        <input type="text" required>
+                        <span class="highlight"></span>
+                        <label>Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" required>
+                        <span class="highlight"></span>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea required></textarea>
+                        <span class="highlight"></span>
+                        <label>Message</label>
+                    </div>
+                    <button class="cyber-button">TRANSMIT<span></span></button>
+                </form>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class='bx bxl-github'></i></a>
+                    <a href="#" class="social-icon"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+               </html>
